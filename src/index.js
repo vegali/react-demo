@@ -2,11 +2,8 @@
 
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
-let MyComponentStyles = {
-    color : 'blue',
-    fontSize : '50px'
-};
+import HelloWorld from './component/hello-world';
 
 ReactDom.render(
-    <h1 style = {MyComponentStyles}>Hello World</h1>,document.getElementById('app')
+    <HelloWorld/>,document.getElementById('app')
 );
