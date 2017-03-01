@@ -5,7 +5,8 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var config = {
     entry : {
         index : [
-            path.resolve(__dirname, 'src/index.js')
+            path.resolve(__dirname, 'src/index.js'),
+            path.resolve(__dirname, 'src/life-cycle.js')
         ]
     },
     output : {

@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 
 class HelloWorld extends Component{
+    state = {
+        text : 'Hello World'
+    };
+
     render(){
         var MyTestStyle = {
             color : 'red',
             fontSize : '20px'
         };
 
-        return <h1 style={MyTestStyle}>Hello World!!</h1>
+        return <h1 style={MyTestStyle}>{this.state.text}</h1>
     }
 }
 
-module.exports = HelloWorld;
+export default HelloWorld;
